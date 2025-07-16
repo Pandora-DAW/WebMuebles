@@ -1,0 +1,30 @@
+html * {
+    box-sizing: border-box; /*Cuenta el ancho y el alto de los elementos con el margin y el border*/
+}
+
+html {
+    font-size: 62.5%;  /*Esto consigue que 1rem equivalga aproximadamente a 10px */
+}
+
+.listado-categorias {
+    display: flex;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: white;
+    /* border-radius: 1rem;*/
+    border-bottom-right-radius: 1rem;
+}
+
+img {
+    display: block;
+}
