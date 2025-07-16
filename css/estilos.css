@@ -6,8 +6,52 @@ html {
     font-size: 62.5%;  /*Esto consigue que 1rem equivalga aproximadamente a 10px */
 }
 
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+/*Posicionar el menú principal*/
+#menu-ppal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu-ppal a {
+    display: block;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.central {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+#portada {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50rem;
+    background-size: cover;
+}
+
 .listado-categorias {
     display: flex;
+    gap: 2rem;
 }
 
 .categoria a {
@@ -25,6 +69,61 @@ html {
     border-bottom-right-radius: 1rem;
 }
 
+/*Nosotros*/
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;   
+    background-size: 70%;
+    background-position: left center;
+}
+
+.nosotros-fondo {
+    background-color: #037bc0;
+    grid-column-start: 2;
+}
+
+.texto-nosotros h2{
+    margin-bottom: 4rem;
+}
+   
+.texto-nosotros{    
+    color: white;
+    padding: 6rem;
+    font-size: 1.6rem;
+}
+ 
+.texto-nosotros h2 {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.texto-nosotros p {
+    padding-right: 4rem;
+}
+
 img {
     display: block;
+    max-width: 100%;
+}
+
+/* Productos*/
+
+.texto-producto {
+    background-color: #037bc0;
+    color: white;
+    padding: 2rem;
+}
+
+.precio {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.boton {
+    background-color: #8cbc00;
+    display: block;
+    
 }
