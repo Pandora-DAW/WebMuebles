@@ -104,12 +104,24 @@ h2 {
     padding-right: 4rem;
 }
 
+
+.boton:hover {
+    background-color: #769c02;
+    padding: 2rem;
+    font-size: 2rem;
+    /* Propiedad CSS que genera una transcisión entre las propiedades de un una regla y la otras con un estado (por ejemplo :hover) lo que transiciona son las propiedades diferentes entre las reglas. E. .8 es el tiuempo en décimas de segundo, y el ease-out el tipo de transcicion*/
+    transition: all .4s ease-out;
+}
+
 img {
     display: block;
     max-width: 100%;
 }
 
 /* Productos*/
+.producto img {
+    object-fit: cover;
+}
 
 .texto-producto {
     background-color: #037bc0;
@@ -125,5 +137,66 @@ img {
 .boton {
     background-color: #8cbc00;
     display: block;
+    text-align:center;
+    padding: 1.5rem;
+    color:black;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.5rem;
     
 }
+
+.producto:nth-child(1) {
+    grid-area: p1;
+  /*  display: grid;
+    grid-template-columns: 5fr 1fr;*/
+    display: flex;
+}
+
+.producto:nth-child(1) img {
+    max-width: 70%;
+}
+
+.producto:nth-child(2) {grid-area: p2;}
+.producto:nth-child(3) {grid-area: p3;}
+.producto:nth-child(4) {grid-area: p4;}
+.producto:nth-child(5) {grid-area: p5;}
+.producto:nth-child(6) {grid-area: p6;}
+
+.listado-productos {
+    display: grid;
+    grid-template-areas: "p1 p1 p1 p1 p1 p1" 
+                         "p2 p2 p2 p3 p3 p3"
+                         "p4 p4 p5 p5 p6 p6";
+    gap: 2rem;
+}
+
+/* OTRA FORMA
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+ }
+
+ .producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+.producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+.producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+.producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+.producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+.producto:nth-child() {
+    grid-column: 1 / span 6;
+}
+    TENDREMOS QUE DEFINIR CADA PRODUCTO EN SU ESPACIO CORRESPONDIENTE.
+*/
+
+
+
