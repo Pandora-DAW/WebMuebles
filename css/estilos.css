@@ -118,7 +118,12 @@ img {
     max-width: 100%;
 }
 
-/* Productos*/
+/* PRODUCTOS*/
+.producto:hover {
+    transform: rotate(-2deg);
+    transition: all 0.5s ease;
+}
+
 .producto img {
     object-fit: cover;
 }
@@ -132,6 +137,7 @@ img {
 .precio {
     font-size: 2.5rem;
     font-weight: 900;
+    text-align: center;
 }
 
 .boton {
@@ -154,7 +160,7 @@ img {
 }
 
 .producto:nth-child(1) img {
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .producto:nth-child(2) {grid-area: p2;}
@@ -197,6 +203,26 @@ img {
 }
     TENDREMOS QUE DEFINIR CADA PRODUCTO EN SU ESPACIO CORRESPONDIENTE.
 */
+
+/*DISEÑO DEL PIE*/
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-enlaces a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 
 
 
